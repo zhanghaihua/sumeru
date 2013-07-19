@@ -45,7 +45,8 @@ var runnable = function(fw){
 		//var modelPath = path.join(process.dstDir, 'server/tmp/model.js');
 		//console.log('modelPath :' + modelPath);
         
-        var appPath  = __dirname + '/../../app' + (process.argv[2] ? '/' +process.argv[2] : '');
+        //var appPath  = __dirname + '/../../app' + (process.argv[2] ? '/' +process.argv[2] : '');
+        var appPath  = __dirname + '/../../app';
         var allTheDirFiles = [];
         var modelBaseDir = appPath + '/model';
         var Model = Model || {};

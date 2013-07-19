@@ -110,8 +110,8 @@
     		'../src/library.js',
             '../src/validation.js',
             '../src/validationRules.js',
-            '../lib/obj.js',
-            '../lib/asyncCallbackHandler.js'
+            '../library/obj.js',
+            '../library/asyncCallbackHandler.js'
     	    ];
     
     	    sumeru = fw;

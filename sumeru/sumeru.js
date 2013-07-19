@@ -129,7 +129,8 @@
     	    sumeru.router.add = function(){};
     	    
             //
-            var appPath  = __dirname + '/../app' + (process.argv[2] ? '/' +process.argv[2] : ''),
+            //var appPath  = __dirname + '/../app' + (process.argv[2] ? '/' +process.argv[2] : ''),
+            var appPath  = __dirname + '/../app',
                 allTheDirFiles = [],
                 modelBaseDir = appPath + '/model',
                 findAllTheDirFiles = function(theDir) {                                 //遍历theDir目录下的所有文件， 并存于allTheDirFiles数组。
