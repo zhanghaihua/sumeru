@@ -1138,6 +1138,7 @@ require(libpath + "/event.js");
 require(libpath + "/pubsub.js");
 //require(libpath + "/sense.js")(fw);
 require(libpath + "/pilot.js")(fw);
+require(libpath + '/query.js');
 
 require(libpath + '/model.js');
 //require(libpath + '/modelPoll.js')(fw);
@@ -1148,6 +1149,12 @@ require(libpath + "/messageDispatcher.js");
 
 require(libpath + '/dal.js');
 require(libpath + '/authModel.js');
+
+//test model
+require('./modelDemo.js');
+require('./userModelDemo.js');
+require('./commentModelDemo.js');
+require('./diggModelDemo.js');
 
 
 //抽取pubname => modelName的对应关系
@@ -1160,6 +1167,6 @@ for (var pubname in PublishContainer){
 }
                 
 Library.objUtils.extend(fw.pubsub._publishModelMap, publishModelMap);
-console.log(fw.pubsub._publishModelMap);
+//console.log(fw.pubsub._publishModelMap);
 
 exports.fw = fw;
