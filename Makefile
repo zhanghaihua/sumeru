@@ -4,7 +4,8 @@ TIMEOUT = 10000
 MOCHA_OPTS =
 G = 
 #JSCOVERAGE = ./node_modules/jscover/bin/jscover
-JSCOVERAGE = ./jscoverage.exe
+#JSCOVERAGE = ./jscoverage.exe
+JSCOVERAGE = ./jscoverage-0.5.1/jscoverage
 
 test:
 	@NODE_ENV=test ./node_modules/mocha/bin/mocha \
