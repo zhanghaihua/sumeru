@@ -7,3 +7,14 @@ services:
    
 script: "npm test"
 
+before_install:
+	- wget http://siliconforks.com/jscoverage/download/jscoverage-0.5.1.tar.bz2
+	- tar xvfj jscoverage-0.5.1.tar.bz2
+	- cd jscoverage-0.5.1
+	- ./configure
+	- make
+	
+after_script:
+	- rm -f jscoverage-0.5.1.tar.bz2
+	- rm -rf jscoverage-0.5.1
+	
