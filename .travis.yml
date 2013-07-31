@@ -13,7 +13,7 @@ before_install:
   - cd jscoverage-0.5.1
   - ./configure
   - make
-	
+
 after_script:
   - rm -f jscoverage-0.5.1.tar.bz2
   - rm -rf jscoverage-0.5.1
