@@ -4,7 +4,7 @@
   "description": "A brand new WebApp framework present by Baidu.Inc",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "make test-cov"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,9 @@
   },
   "devDependencies": {
     "mocha": "1.8.1",
-    "chai": "1.7.2"
+    "chai": "1.7.2",
+    "mocha-lcov-reporter": "*",
+    "coveralls" : "*"
   },
   
   "bin": {
