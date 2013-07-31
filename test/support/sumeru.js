@@ -1127,7 +1127,7 @@ fw.onSumeruData = function(msg, conn){
     if (fw.config.get("rsa_enable") && msg.substring(0,1) !== "{") {
         msg = fw.myrsa.decrypt(msg);
     }
-    log.write("retrieving " + msg);
+    //log.write("retrieving " + msg);
     
     netMessage.onData(msg,conn);
 };
