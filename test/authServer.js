@@ -11,11 +11,6 @@ var expect = require("chai").expect;
 var run = require('./support/sumeru.js');
 var fw = run.fw;
 
-/*
- * env SUMERU_COV为真，统计覆盖率，引用被instrumented的代码
- */
-var libpath = process.env.SUMERU_COV ? '../sumeru-cov/src' : '../sumeru/src';
-var libserverpath = process.env.SUMERU_COV ? './sumeru-cov/server' : '../sumeru/server';
 
 /*
  * 测试对象文件

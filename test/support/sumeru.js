@@ -10,14 +10,14 @@
 /*
  * env SUMERU_COV为真，统计覆盖率，引用被instrumented的代码
  */
-var libpath = process.env.SUMERU_COV ? '../sumeru-cov/src' : '../../sumeru/src';
-var libserverpath = process.env.SUMERU_COV ? '../sumeru-cov/server' : '../../sumeru/server';
+var libpath = process.env.SUMERU_COV ? '../../sumeru-cov/src' : '../../sumeru/src';
+var libserverpath = process.env.SUMERU_COV ? '../../sumeru-cov/server' : '../../sumeru/server';
 
 /*
  * env SUMERU_COV为真，统计覆盖率，引用被instrumented的代码
  */
-var libpath = process.env.SUMERU_COV ? '../sumeru-cov/src' : '../../sumeru/src';
-var libserverpath = process.env.SUMERU_COV ? '../sumeru-cov/server' : '../../sumeru/server';
+var libpath = process.env.SUMERU_COV ? '../../sumeru-cov/src' : '../../sumeru/src';
+var libserverpath = process.env.SUMERU_COV ? '../../sumeru-cov/server' : '../../sumeru/server';
 
 var fw = require(libpath + '/newPkg.js')();
 

@@ -44,7 +44,8 @@ process.dstDir = dstDir;
 
 var buildListPath = path.join(__dirname,'/buildList.json');	
 if(!fs.existsSync(buildListPath)){
-     return;
+     //return;
+     throw buildListPath + " not exists!";
 }
 
 build = require(buildListPath);		
@@ -52,7 +53,8 @@ buildList = build.buildList;
 
 if (typeof buildList == 'undefined' || buildList.length <= 0){
     console.log('Error: read buildList.json, build failed');
-    return;
+    throw 'Error: read buildList.json, build failed';
+    //return;
 }
 
 
@@ -199,11 +201,3 @@ var copySumeruFile2AppBin = function(){
     buildManifest(appDir, path.join(dstDir, 'bin'));
 }
 copySumeruFile2AppBin();
-
-
-
-
-
-
-
-
