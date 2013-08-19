@@ -355,7 +355,7 @@ describe("message", function() {
 	    });
 	    
 	    netMessage.addOutFilter(function(msg){
-	        if (msg.target == "test-message-2") {
+	        if (msg.target == "test-message-2") {
 	        	msg.outFilter = true;
 	        }
 	        return msg;

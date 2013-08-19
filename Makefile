@@ -20,11 +20,9 @@ test-g:
 		$(TESTS)
 
 test-cov: sumeru-cov
-	#@SUMERU_COV=1 $(MAKE) test REPORTER=dot
-	#@SUMERU_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
-	#fix me mocha-lcov-reporter can cause loop and then can not exit
-	#@SUMERU_COV=1 $(MAKE) test REPORTER=mocha-lcov-reporter
-	#@SUMERU_COV=1 $(MAKE) test REPORTER=mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+	@SUMERU_COV=1 $(MAKE) test REPORTER=dot
+	@SUMERU_COV=1 $(MAKE) test REPORTER=html-cov > coverage.html
+	@SUMERU_COV=1 $(MAKE) test REPORTER=mocha-lcov-reporter | sed "s/SF:/&sumeru-cov\//g" | COVERALLS_REPO_TOKEN="QPt6kZVAuajrqNB6DCb9Jhcd77zVXj7el" ./node_modules/coveralls/bin/coveralls.js
 	@rm -rf sumeru-cov
 
 sumeru-cov:
